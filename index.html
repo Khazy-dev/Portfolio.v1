@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>✦ Vanesa — portfolio ✦</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/icon.jpg" />
+</head>
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+  <div class="crt-overlay" aria-hidden="true"></div>
+
+  <div class="page-wrapper">
+
+    <nav>
+      <span class="nav-logo">✦ Portfolio.vane</span>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#sobre-mi">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#proyectos">works</a></li>
+        <li><a href="#contacto">contact</a></li>
+      </ul>
+      <span class="nav-hearts" aria-hidden="true">♡ ♡ ♡</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <span class="star-deco" style="top:12%;left:6%;animation-delay:0s">✦</span>
+      <span class="star-deco" style="top:22%;right:8%;animation-delay:1s;color:var(--blush)">★</span>
+      <span class="star-deco" style="top:58%;left:4%;animation-delay:1.6s">✧</span>
+      <span class="star-deco" style="top:68%;right:6%;animation-delay:.4s;color:var(--blush)">✦</span>
+      <span class="star-deco" style="top:38%;left:12%;animation-delay:2.2s">◆</span>
+      <span class="star-deco" style="top:78%;right:18%;animation-delay:.9s">✦</span>
+
+      <span class="hero-glyph" aria-hidden="true">✦</span>
+
+      <p class="hero-subtitle">&gt;&gt; <span id="typewriter"></span><span class="cursor-blink" aria-hidden="true"></span></p>
+      <h1 class="hero-title" id="hero-title">✦ &nbsp;hola, soy &nbsp;<span style="color:var(--pink)">Vanesa</span>&nbsp; ✦</h1>
+      <p class="hero-desc">Dev construyendo pequeños universos digitales entre café, código y creatividad ⌨︎☕︎</p>
+
+      <div class="btn-group">
+        <a href="#proyectos" class="btn-pixel btn-pixel--primary">▶ ver proyectos</a>
+        <a href="#contacto"  class="btn-pixel btn-pixel--secondary">✉ contacto</a>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">· · · ♡ · · ·</div>
+
+    <section id="sobre-mi" aria-labelledby="about-title">
+      <div class="section-header">
+        <span class="section-label">// ARCHIVO_PERSONAL.exe</span>
+        <h2 class="section-title" id="about-title">sobre mí</h2>
+      </div>
+
+      <div class="dialog-box pixel-border">
+        <span class="dialog-name" aria-hidden="true">✦ vane.dev</span>
+        <p class="dialog-text">
+          soy una desarrolladora frontend <span class="accent">tratando de aprender siempre más </span>
+          me gusta construir interfaces que cuenten historias, con cada píxel en su lugar perfecto.<br><br>
+          <span class="accent">misión actual:</span> convertir ideas en experiencias digitales irresistibles.
+        </p>
+        <div class="tags" role="list">
+          <span class="tag" role="listitem">✦ lo-fi</span>
+          <span class="tag" role="listitem">✦ frontend</span>
+          <span class="tag" role="listitem">✦ game dev</span>
+          <span class="tag" role="listitem">✦ cozy games</span>
+          <span class="tag" role="listitem">✦ anime</span>
+          <span class="tag" role="listitem">✦ manga</span>
+        </div>
+        <span class="dialog-next" aria-hidden="true">▼</span>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">· · · ♡ · · ·</div>
+
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="section-header">
+        <span class="section-label">// SPELL_LIST</span>
+        <h2 class="section-title" id="skills-title">habilidades</h2>
+      </div>
+
+      <div class="skill-categories">
+        <div class="skill-category pixel-border--soft">
+          <h3 class="category-title"><span>✦</span> frontend</h3>
+          <ul class="skill-list">
+            <li class="skill-item">HTML &amp; CSS</li>
+            <li class="skill-item">JavaScript</li>
+            <li class="skill-item">tailwindcss</li>
+            <li class="skill-item">Responsive Design</li>
+          </ul>
+        </div>
+
+
+        <div class="skill-category pixel-border--soft">
+          <h3 class="category-title"><span>✦</span> otras</h3>
+          <ul class="skill-list">
+            <li class="skill-item">Git &amp; GitHub</li>
+            <li class="skill-item">Figma</li>
+            <li class="skill-item">VS code</li>
+            <li class="skill-item">Java</li>
+            <li class="skill-item">Eclipse</li>
+            <li class="skill-item">Apache NetBeans</li>
+            <li class="skill-item">Postman</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">· · · ♡ · · ·</div>
+
+    <!-- ✦ PROYECTOS — cards clickeables con preview uniforme -->
+    <section id="proyectos" aria-labelledby="projects-title">
+      <div class="section-header">
+        <span class="section-label">// INVENTARIO.json</span>
+        <h2 class="section-title" id="projects-title">proyectos</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <a href="https://github.com/Khazy-dev/PomodoroCKP" target="_blank" rel="noopener" class="project-card pixel-border">
+          <div class="project-thumb">
+            <img src="img/Projects-img/Pomodoro.png" alt="PomodoroCKP preview" loading="lazy">
+          </div>
+          <span class="project-rarity rarity-legendary">★ legendary</span>
+          <div class="project-content">
+            <span class="project-icon" aria-hidden="true">🍅</span>
+            <h3 class="project-title">PomodoroCKP</h3>
+            <p class="project-desc">app de escritorio en Python con GUI para estudiar con técnica pomodoro.</p>
+            <div class="project-stats">
+              <span class="stat-badge">Python</span>
+              <span class="stat-badge">GUI</span>
+              <span class="stat-badge">Desktop</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener" class="project-card pixel-border">
+          <div class="project-thumb">
+            <img src="img/cozyquest.png" alt="cozy quest preview" loading="lazy">
+          </div>
+          <span class="project-rarity rarity-epic">◆ epic</span>
+          <div class="project-content">
+            <span class="project-icon" aria-hidden="true">.</span>
+            <h3 class="project-title">Proximamente</h3>
+            <p class="project-desc">..</p>
+            <div class="project-stats">
+              <span class="stat-badge">.</span>
+              <span class="stat-badge"></span>
+              <span class="stat-badge"> </span>
+            </div>
+          </div>
+        </a>
+
+        <a href="#" target="_blank" rel="noopener" class="project-card pixel-border">
+          <div class="project-thumb">
+            <img src="img/lofi.png" alt="lofi dashboard preview" loading="lazy">
+          </div>
+          <span class="project-rarity rarity-rare">◇ rare</span>
+          <div class="project-content">
+            <span class="project-icon" aria-hidden="true">.</span>
+            <h3 class="project-title">lofi dashboard</h3>
+            <p class="project-desc">Proximamente</p>
+            <div class="project-stats">
+              <span class="stat-badge">.</span>
+              <span class="stat-badge"></span>
+              <span class="stat-badge"></span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true">· · · ♡ · · ·</div>
+
+    <section id="contacto" class="terminal-section" aria-labelledby="contact-title">
+      <div class="section-header">
+        <span class="section-label">// CONNECT.sh</span>
+        <h2 class="section-title" id="contact-title">contacto</h2>
+      </div>
+
+      <div class="terminal-window pixel-border" role="region" aria-label="Terminal de contacto">
+        <div class="terminal-bar" aria-hidden="true">
+          <div class="terminal-dot dot-red"></div>
+          <div class="terminal-dot dot-yellow"></div>
+          <div class="terminal-dot dot-green"></div>
+          <span class="terminal-title">karla2.dev@gmail.com ~ zsh</span>
+        </div>
+        <div class="terminal-body" id="terminal-output" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-text">
+        hecho con <span class="footer-heart" aria-label="amor">♡</span> y demasiado café <br>
+        <span style="color:var(--mauve-dim);font-size:14px">© 2024 Vane.dev — todos los píxeles reservados</span>
+      </p>
+      <ul class="footer-social" aria-label="Redes sociales">
+        <li><a href="https://github.com/Khazy-dev" target="_blank" rel="noopener">github</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Linkedin</a></li>
+      </ul>
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
